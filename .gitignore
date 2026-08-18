@@ -1,0 +1,5 @@
+/site/cache/
+/site/sessions/
+/site/accounts/*
+!/site/accounts/.gitkeep
+.env
