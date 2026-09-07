@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'debug' => true,
+    'debug' => false,
     'yaml.handler' => 'symfony',
     'url' => 'https://thewarringtongroup.com',
     'panel' => [
