@@ -5,6 +5,6 @@ return [
     'yaml.handler' => 'symfony',
     'url' => 'https://thewarringtongroup.com',
     'panel' => [
-        'install' => true,
+        'install' => false,
     ],
 ];
