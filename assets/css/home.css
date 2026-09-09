@@ -1,0 +1,333 @@
+/* ---------------------------------------------------------------
+   The Warrington Group — homepage
+   Editorial layout: left-aligned, ledger-style service rows,
+   a genuine 3-step sequence, restrained gold accent.
+   --------------------------------------------------------------- */
+
+body {
+  background: var(--color-paper);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.logo-mark {
+  display: block;
+  width: 2.25rem;
+  height: auto;
+}
+.logo-word {
+  font-family: var(--font-family-logo);
+  font-size: 1.0625rem;
+  letter-spacing: 0.12em;
+  color: var(--color-ink);
+}
+
+.menu a {
+  font-size: 0.9375rem;
+}
+
+.menu-cta {
+  color: var(--color-gold-deep);
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 1.5rem;
+  border: 1px solid var(--color-ink);
+  font-size: 0.9375rem;
+  line-height: 1;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.btn-primary:hover {
+  background: var(--color-gold-deep);
+  border-color: var(--color-gold-deep);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-line);
+}
+.btn-secondary:hover {
+  border-color: var(--color-ink);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0 5rem;
+}
+.hero-inner {
+  max-width: 40rem;
+}
+.hero-headline {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  color: var(--color-ink);
+}
+.hero-subheadline {
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: var(--color-ink-soft);
+  max-width: 34rem;
+  margin-bottom: 2.25rem;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Shared section head */
+.section-head {
+  max-width: 34rem;
+  margin-bottom: 2.5rem;
+}
+.section-head h2 {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: var(--color-ink);
+  margin-bottom: 0.75rem;
+}
+.section-head p {
+  color: var(--color-ink-soft);
+  line-height: 1.55;
+}
+
+.services,
+.approach,
+.about,
+.contact {
+  padding: 4rem 0;
+  border-top: 1px solid var(--color-line);
+}
+
+/* Services — ledger rows, not cards */
+.ledger {
+  border-top: 1px solid var(--color-line);
+}
+.ledger-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.ledger-name {
+  font-family: var(--font-family-serif);
+  font-size: 1.375rem;
+  color: var(--color-gold-deep);
+}
+.ledger-description {
+  color: var(--color-ink);
+  line-height: 1.55;
+  max-width: 34rem;
+  margin-bottom: 1rem;
+}
+.ledger-capabilities {
+  display: grid;
+  gap: 0.4rem;
+}
+.ledger-capabilities li {
+  color: var(--color-ink-soft);
+  font-size: 0.9375rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.ledger-capabilities li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.375rem;
+  height: 1px;
+  background: var(--color-ink-soft);
+}
+
+/* Approach — a genuine sequence */
+.steps {
+  display: grid;
+  gap: 2rem;
+}
+.step {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1.25rem;
+  align-items: baseline;
+}
+.step-index {
+  font-family: var(--font-family-mono);
+  font-size: 0.9375rem;
+  color: var(--color-gold);
+}
+.step-body h3 {
+  font-family: var(--font-family-serif);
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-ink);
+}
+.step-body p {
+  color: var(--color-ink-soft);
+  line-height: 1.55;
+  max-width: 34rem;
+}
+
+/* About */
+.about {
+  display: grid;
+  gap: 2.5rem;
+}
+.about-text h2 {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+.about-text p {
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+  max-width: 38rem;
+}
+.about-text p + p {
+  margin-top: 1rem;
+}
+.about-credentials {
+  border-left: 2px solid var(--color-gold);
+  padding-left: 1.25rem;
+  max-width: 30rem;
+}
+.about-credentials p {
+  color: var(--color-ink-soft);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+/* Contact */
+.contact {
+  position: relative;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  margin: 0 calc(var(--padding) * -1);
+  padding: 4rem var(--padding);
+  border-top: none;
+  overflow: hidden;
+}
+.contact-mark {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  width: 5rem;
+  height: auto;
+  opacity: 0.9;
+  display: none;
+}
+
+@media screen and (min-width: 40rem) {
+  .contact-mark {
+    display: block;
+  }
+}
+.contact-inner {
+  max-width: 34rem;
+}
+.contact h2 {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.contact p {
+  color: #c3c8d6;
+  line-height: 1.55;
+  margin-bottom: 1.75rem;
+}
+.contact .btn-primary {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-ink);
+}
+.contact .btn-primary:hover {
+  background: var(--color-paper);
+  border-color: var(--color-paper);
+}
+
+/* Footer */
+.site-footer {
+  padding: 3rem 0 2.5rem;
+  border-top: 1px solid var(--color-line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.site-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.site-footer-mark {
+  display: block;
+  width: 1.75rem;
+  height: auto;
+  flex-shrink: 0;
+}
+.site-footer-name {
+  font-family: var(--font-family-logo);
+  letter-spacing: 0.1em;
+  color: var(--color-ink);
+}
+.site-footer-location {
+  color: var(--color-ink-soft);
+  font-size: 0.875rem;
+}
+.site-footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.site-footer-links a {
+  color: var(--color-ink-soft);
+  font-size: 0.9375rem;
+}
+.site-footer-links a:hover {
+  color: var(--color-gold-deep);
+}
+.site-footer-copyright {
+  color: var(--color-ink-soft);
+  font-size: 0.8125rem;
+  width: 100%;
+  order: 3;
+}
+
+@media screen and (min-width: 60rem) {
+  .hero {
+    padding: 6rem 0 7rem;
+  }
+  .ledger-row {
+    grid-template-columns: 14rem 1fr;
+    gap: 2rem;
+  }
+  .about {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+  .site-footer-copyright {
+    width: auto;
+    order: 0;
+  }
+}

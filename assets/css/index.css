@@ -5,12 +5,22 @@
 
 :root {
   --padding: 1.5rem;
+
+  /* Brand palette — sampled directly from the client's logo files */
+  --color-ink: #141414;
+  --color-ink-soft: #58554c;
+  --color-paper: #ffffff;
+  --color-paper-deep: #f4f3ef;
+  --color-line: #e2dfd6;
+  --color-gold: #b9a378;
+  --color-gold-deep: #8a7752;
+
   --color-black: #000;
   --color-white: #fff;
   --color-grey: #777;
   --color-light: #efefef;
-  --color-text: var(--color-black);
-  --color-text-grey: var(--color-grey);
+  --color-text: var(--color-ink);
+  --color-text-grey: var(--color-ink-soft);
   --color-background: var(--color-white);
   --color-code-light-grey:  #cacbd1;
   --color-code-comment:     #a9aaad;
@@ -22,8 +32,10 @@
   --color-code-aqua:        #8abeb7;
   --color-code-blue:        #7e9abf;
   --color-code-purple:      #b294bb;
-  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-family-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-family-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-family-logo: "Poiret One", "Century Gothic", var(--font-family-sans);
 }
 
 html {

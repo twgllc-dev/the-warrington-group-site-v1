@@ -2,11 +2,112 @@ Title: Home
 
 ----
 
-Headline: Welcome to Kirby's Starterkit
+Hero_headline: We turn scattered data into systems your business can run on
 
 ----
 
-Subheadline: A fully documented example project
+Hero_subheadline: The Warrington Group is an analytics, digital, and automation consultancy for small and mid-sized organizations — built to work as closely with you as an in-house team would.
+
+----
+
+Hero_cta_primary_label: Start a conversation
+
+----
+
+Hero_cta_primary_link: #contact
+
+----
+
+Hero_cta_secondary_label: See how we work
+
+----
+
+Hero_cta_secondary_link: #approach
+
+----
+
+Services_heading: Where we help
+
+----
+
+Services_intro: Most businesses don't have a data problem or a technology problem — they have both, tangled together. We work across three areas that usually need to move together.
+
+----
+
+Services:
+
+-
+  name: Analytics & Data
+  description: Turn raw, scattered data into a foundation you can trust — architecture, cleansing, storage, and reporting built to hold up as you grow.
+  capabilities: |
+    Data infrastructure & migration
+    ETL and data pipelines
+    Dashboards & reporting (Tableau, Power BI)
+    Data governance & security
+
+-
+  name: Digital
+  description: Bring your platforms and customer-facing systems up to the same standard as your data — without requiring a specialist on staff to keep them running.
+  capabilities: |
+    Systems & platform modernization
+    Cloud migration
+    Tool and vendor integration
+    Digital strategy & roadmapping
+
+-
+  name: Automation
+  description: Replace manual, error-prone busywork with dependable processes — from reporting that runs itself to workflows that connect the tools you already use.
+  capabilities: |
+    Workflow & reporting automation
+    Process redesign
+    Integration between existing systems
+    Ongoing monitoring & maintenance
+
+----
+
+Approach_heading: How we work together
+
+----
+
+Approach_steps:
+
+-
+  title: Scope
+  description: We start by understanding your business and your data, not by proposing a tool. Every engagement begins with a clear, written scope before any work starts.
+
+-
+  title: Build
+  description: We design and build the system with you, not for you. You're involved at each stage — not just the kickoff and the handoff.
+
+-
+  title: Operate
+  description: We hand off something your team can actually run — documented, tested, and yours. We stay close enough to help as it grows.
+
+----
+
+About_heading: A small team, on purpose
+
+----
+
+About_text: The Warrington Group is based in Washington, D.C., working with clients across the DC, Maryland, and Virginia area, and remotely beyond it. We work with organizations in consulting, engineering, retail, healthcare, and finance who need their data and systems to keep up with the business.
+
+Unlike the large consultancies, we don't hand your project to whoever's free on the bench. You work directly with the people doing the work, from the first conversation through delivery — and we stay invested in the outcome, not just the deliverable.
+
+----
+
+About_credentials: Led by a principal consultant with a background in data engineering, analytics, and technical project management across federal and commercial clients — holding active certifications including PMP, Certified ScrumMaster, and AWS Solutions Architect – Associate.
+
+----
+
+Contact_heading: Tell us where it's breaking down
+
+----
+
+Contact_text: Whether it's one specific project or a general sense that your data and systems could be working harder for you, we're happy to talk it through — no pitch deck required.
+
+----
+
+Contact_email: hello@thewarringtongroup.com
 
 ----
 

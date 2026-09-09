@@ -1,34 +1,99 @@
-# Each page blueprint must have a title, the title may be different from the file name
 title: Home
-
-# Each page can have an icon that is shown in page listings when no preview image is available.
 icon: 🏠
 
-# Page options allow you to control how users can interact with the page.
-# Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
-# More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
 options:
   changeStatus: false
 
-# Here we define an info section and a pages section (`photography`)
 sections:
-  content:
+  hero:
     type: fields
     fields:
-      headline:
+      hero_headline:
+        label: Headline
         type: text
-        width: 1/2
-      gap:
-        width: 1/2
-      subheadline:
+      hero_subheadline:
+        label: Subheadline
+        type: textarea
+        size: small
+      hero_cta_primary_label:
+        label: Primary button label
         type: text
-        width: 1/2
+        width: 1/4
+      hero_cta_primary_link:
+        label: Primary button link
+        type: text
+        width: 1/4
+      hero_cta_secondary_label:
+        label: Secondary button label
+        type: text
+        width: 1/4
+      hero_cta_secondary_link:
+        label: Secondary button link
+        type: text
+        width: 1/4
 
-  # The photography section extends a pages section defined in the `/site/blueprints/section/album.yml` blueprint
-  # More about reusing and extending sections: https://getkirby.com/docs/guide/blueprints/extending-blueprints#reusing-and-extending-sectionss
-  photography:
-    label: Photography
-    extends: sections/albums
-    status: listed
-    size: small
-    help: All projects for the homepage are being pulled from the photography page.
+  services:
+    type: fields
+    fields:
+      services_heading:
+        label: Section heading
+        type: text
+      services_intro:
+        label: Section intro
+        type: textarea
+        size: small
+      services:
+        label: Service pillars
+        type: structure
+        fields:
+          name:
+            type: text
+          description:
+            type: textarea
+          capabilities:
+            label: Capabilities (one per line)
+            type: textarea
+            size: small
+
+  approach:
+    type: fields
+    fields:
+      approach_heading:
+        label: Section heading
+        type: text
+      approach_steps:
+        label: Steps
+        type: structure
+        fields:
+          title:
+            type: text
+          description:
+            type: textarea
+
+  about:
+    type: fields
+    fields:
+      about_heading:
+        label: Section heading
+        type: text
+      about_text:
+        label: Body text
+        type: textarea
+      about_credentials:
+        label: Credentials line
+        type: textarea
+        size: small
+
+  contact:
+    type: fields
+    fields:
+      contact_heading:
+        label: Section heading
+        type: text
+      contact_text:
+        label: Body text
+        type: textarea
+        size: small
+      contact_email:
+        label: Email address
+        type: text

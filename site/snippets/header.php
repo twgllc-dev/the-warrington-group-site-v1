@@ -18,13 +18,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-  <?php
-  /*
-    In the title tag we show the title of our
-    site and the title of the current page
-  */
-  ?>
-  <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
+  <?php $isHome = $page->isHomePage() ?>
+
+  <title><?= $isHome
+    ? $site->title()->esc() . ' — ' . $site->tagline()->or('Analytics, digital & automation consulting')->esc()
+    : $site->title()->esc() . ' | ' . $page->title()->esc()
+  ?></title>
+
+  <?php if ($isHome && $page->hero_subheadline()->isNotEmpty()): ?>
+  <meta name="description" content="<?= $page->hero_subheadline()->esc() ?>">
+  <?php endif ?>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Poiret+One&display=swap" rel="stylesheet">
 
   <?php
   /*
@@ -37,6 +44,7 @@
     'assets/css/prism.css',
     'assets/css/lightbox.css',
     'assets/css/index.css',
+    'assets/css/home.css',
     '@auto'
   ]) ?>
 
@@ -60,27 +68,24 @@
     */
     ?>
     <a class="logo" href="<?= $site->url() ?>">
-      <?= $site->title()->esc() ?>
+      <img class="logo-mark" src="<?= url('assets/images/logo-mark-dark.png') ?>" alt="" width="40" height="36">
+      <span class="logo-word">the warrington group</span>
     </a>
 
+    <?php
+    /*
+      This is a single-page marketing site for now, so the nav
+      points to sections on the homepage rather than separate
+      pages. The photography/notes/about starter pages are still
+      in the repo but are not part of this nav yet.
+    */
+    $home = $site->homePage();
+    ?>
     <nav class="menu">
-      <?php
-      /*
-        In the menu, we only fetch listed pages,
-        i.e. the pages that have a prepended number
-        in their foldername.
-
-        We do not want to display links to unlisted
-        `error`, `home`, or `sandbox` pages.
-
-        More about page status:
-        https://getkirby.com/docs/reference/panel/blueprints/page#statuses
-      */
-      ?>
-      <?php foreach ($site->children()->listed() as $item): ?>
-      <a <?php e($item->isOpen(), 'aria-current="page"') ?> href="<?= $item->url() ?>"><?= $item->title()->esc() ?></a>
-      <?php endforeach ?>
-      <?php snippet('social') ?>
+      <a href="<?= $home->url() ?>#services">Services</a>
+      <a href="<?= $home->url() ?>#approach">Approach</a>
+      <a href="<?= $home->url() ?>#about">About</a>
+      <a class="menu-cta" href="<?= $home->url() ?>#contact">Contact</a>
     </nav>
   </header>
 

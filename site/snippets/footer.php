@@ -11,33 +11,22 @@
 ?>
   </main>
 
-  <footer class="footer">
-    <div class="grid">
-      <div class="column" style="--columns: 8">
-        <h2><a href="https://getkirby.com">Made with Kirby</a></h2>
-        <p>
-          Kirby: the file-based CMS that adapts to any project, loved by developers and editors alike
-        </p>
-      </div>
-      <div class="column" style="--columns: 2">
-        <h2>Pages</h2>
-        <ul>
-          <?php foreach ($site->children()->listed() as $example): ?>
-          <li><a href="<?= $example->url() ?>"><?= $example->title()->esc() ?></a></li>
-          <?php endforeach ?>
-        </ul>
-      </div>
-      <div class="column" style="--columns: 2">
-        <h2>Kirby</h2>
-        <ul>
-          <li><a href="https://getkirby.com">Website</a></li>
-          <li><a href="https://getkirby.com/docs">Docs</a></li>
-          <li><a href="https://forum.getkirby.com">Forum</a></li>
-          <li><a href="https://chat.getkirby.com">Chat</a></li>
-          <li><a href="https://github.com/getkirby">GitHub</a></li>
-        </ul>
+  <?php $home = $site->homePage() ?>
+  <footer class="site-footer">
+    <div class="site-footer-brand">
+      <img class="site-footer-mark" src="<?= url('assets/images/logo-mark-dark.png') ?>" alt="" width="28" height="25">
+      <div>
+        <p class="site-footer-name"><?= $site->title()->esc() ?></p>
+        <p class="site-footer-location">Washington, D.C.</p>
       </div>
     </div>
+    <nav class="site-footer-links">
+      <a href="<?= $home->url() ?>#services">Services</a>
+      <a href="<?= $home->url() ?>#approach">Approach</a>
+      <a href="<?= $home->url() ?>#about">About</a>
+      <a href="<?= $home->url() ?>#contact">Contact</a>
+    </nav>
+    <p class="site-footer-copyright">&copy; <?= date('Y') ?> <?= $site->title()->esc() ?></p>
   </footer>
 
   <?= js([
