@@ -68,7 +68,7 @@
     */
     ?>
     <a class="logo" href="<?= $site->url() ?>">
-      <img class="logo-mark" src="<?= url('assets/images/logo-mark-dark.png') ?>" alt="" width="40" height="36">
+      <img class="logo-mark" src="<?= url('assets/images/logo-mark-light.png') ?>" alt="" width="40" height="36">
       <span class="logo-word">the warrington group</span>
     </a>
 

@@ -8,6 +8,12 @@ body {
   background: var(--color-paper);
 }
 
+.header {
+  background: var(--color-ink);
+  margin: 0 calc(var(--padding) * -1) 4rem;
+  padding: 0 var(--padding);
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -22,15 +28,19 @@ body {
   font-family: var(--font-family-logo);
   font-size: 1.0625rem;
   letter-spacing: 0.12em;
-  color: var(--color-ink);
+  color: var(--color-paper);
 }
 
 .menu a {
   font-size: 0.9375rem;
+  color: var(--color-paper);
+}
+.menu a:hover {
+  color: var(--color-gold);
 }
 
 .menu-cta {
-  color: var(--color-gold-deep);
+  color: var(--color-gold);
   font-weight: 500;
 }
 
