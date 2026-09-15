@@ -1,0 +1,33 @@
+title: Lead
+icon: user
+
+options:
+  create: false
+  changeSlug: false
+  changeTemplate: false
+  changeStatus: false
+
+fields:
+  firstname:
+    label: First Name
+    type: text
+    width: 1/2
+  lastname:
+    label: Last Name
+    type: text
+    width: 1/2
+  business:
+    label: Business / Organization
+    type: text
+  email:
+    label: Email
+    type: email
+  phone:
+    label: Phone
+    type: tel
+  details:
+    label: Additional Details
+    type: textarea
+  date:
+    label: Submitted
+    type: text

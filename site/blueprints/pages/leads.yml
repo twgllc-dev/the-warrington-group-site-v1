@@ -1,0 +1,29 @@
+title: Leads
+icon: users
+
+options:
+  create: false     # entries are only created by the contact form, not manually in the Panel
+  changeSlug: false
+  changeTemplate: false
+
+sections:
+  leads:
+    type: pages
+    headline: Submissions
+    template: lead
+    layout: table
+    sortBy: date desc
+    columns:
+      firstname:
+        label: First Name
+      lastname:
+        label: Last Name
+      business:
+        label: Business
+      email:
+        label: Email
+      phone:
+        label: Phone
+      date:
+        label: Submitted
+        type: text
