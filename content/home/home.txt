@@ -2,15 +2,15 @@ Title: Home
 
 ----
 
-Hero_headline: We turn scattered data into systems your business can run on
+Hero_headline: Enterprise-grade data platforms and AI automation, embedded directly into your team
 
 ----
 
-Hero_subheadline: The Warrington Group is an analytics, digital, and automation consultancy for small and mid-sized organizations — built to work as closely with you as an in-house team would.
+Hero_subheadline: The Warrington Group is a modern analytics engineering and AI automation consultancy. We embed directly with startups, mid-market businesses, and enterprise teams to design, scale, and optimize high-impact data systems.
 
 ----
 
-Hero_cta_primary_label: Start a conversation
+Hero_cta_primary_label: Start a Conversation
 
 ----
 
@@ -18,7 +18,7 @@ Hero_cta_primary_link: #contact
 
 ----
 
-Hero_cta_secondary_label: See how we work
+Hero_cta_secondary_label: Explore Our Engagement Model
 
 ----
 
@@ -26,84 +26,84 @@ Hero_cta_secondary_link: #approach
 
 ----
 
-Services_heading: Where we help
+Services_heading: Where We Deliver Impact
 
 ----
 
-Services_intro: Most businesses don't have a data problem or a technology problem — they have both, tangled together. We work across three areas that usually need to move together.
+Services_intro: Fragmented data and manual work slow down growth. We provide high-velocity technical capabilities across three core pillars—whether you need to build from scratch, scale existing systems, or automate business workflows.
 
 ----
 
 Services:
 
 -
-  name: Analytics & Data
-  description: Turn raw, scattered data into a foundation you can trust — architecture, cleansing, storage, and reporting built to hold up as you grow.
+  name: Analytics Engineering & Infrastructure
+  description: Build a modern, resilient data foundation. We transform raw, multi-source data into clean, operational pipelines and trustworthy reporting layers designed for seamless scale.
   capabilities: |
-    Data infrastructure & migration
-    ETL and data pipelines
-    Dashboards & reporting (Tableau, Power BI)
-    Data governance & security
+    Cloud Lakehouse Architectures (Snowflake, Databricks, BigQuery)
+    Modern Data Modeling & Transformation (dbt)
+    Automated Ingestion & ETL/ELT Pipelines
+    Self-Service BI & Executive Dashboards (Looker, Tableau, Power BI)
 
 -
-  name: Digital
-  description: Bring your platforms and customer-facing systems up to the same standard as your data — without requiring a specialist on staff to keep them running.
+  name: AI & Machine Learning Automation
+  description: Turn manual tasks into intelligent, autonomous systems. We pair custom machine learning and workflow automation to increase efficiency, accuracy, and performance across your operations.
   capabilities: |
-    Systems & platform modernization
-    Cloud migration
-    Tool and vendor integration
-    Digital strategy & roadmapping
+    Predictive Analytics & Forecasting Models
+    Automated Data Quality & Pipeline Monitoring
+    Workflow & Reporting Automation
+    Intelligent Data Processing & LLM Integrations
 
 -
-  name: Automation
-  description: Replace manual, error-prone busywork with dependable processes — from reporting that runs itself to workflows that connect the tools you already use.
+  name: Embedded Strategy & Advisory
+  description: Get dedicated senior technical execution without the overhead of building an in-house data department or managing rigid third-party vendors.
   capabilities: |
-    Workflow & reporting automation
-    Process redesign
-    Integration between existing systems
-    Ongoing monitoring & maintenance
+    Modern Data Stack Audits & Roadmaps
+    Data Governance, Security & Compliance
+    System Migration & Optimization
+    Team Enablement & Technical Leadership
 
 ----
 
-Approach_heading: How we work together
+Approach_heading: Outcome-Driven, Embedded Collaboration
 
 ----
 
 Approach_steps:
 
 -
-  title: Scope
-  description: We start by understanding your business and your data, not by proposing a tool. Every engagement begins with a clear, written scope before any work starts.
+  title: Discovery & Audit
+  description: We map your data landscape, identify immediate ROI opportunities, and define clear milestone deliverables before writing a line of code.
 
 -
-  title: Build
-  description: We design and build the system with you, not for you. You're involved at each stage — not just the kickoff and the handoff.
+  title: Embedded Build & Automation
+  description: We join your team directly—building cloud architectures, engineering clean dbt models, and deploying automated workflows transparently alongside your staff.
 
 -
-  title: Operate
-  description: We hand off something your team can actually run — documented, tested, and yours. We stay close enough to help as it grows.
+  title: Enablement & Autonomous Scale
+  description: We deliver fully documented, tested systems that your team can run independently, backed by optional continuous optimization retrainers as you scale.
 
 ----
 
-About_heading: A small team, on purpose
+About_heading: Senior Expertise. Zero Bench. Direct Embed.
 
 ----
 
-About_text: The Warrington Group is based in Washington, D.C., working with clients across the DC, Maryland, and Virginia area, and remotely beyond it. We work with organizations in consulting, engineering, retail, healthcare, and finance who need their data and systems to keep up with the business.
+About_text: Headquartered in Washington, D.C. with dual operations in New Jersey, The Warrington Group serves clients locally across the DC metro and NY/NJ areas, as well as remotely nationwide. We partner with organizations across healthcare, finance, retail, media, sports & entertainment, and software/tech.
 
-Unlike the large consultancies, we don't hand your project to whoever's free on the bench. You work directly with the people doing the work, from the first conversation through delivery — and we stay invested in the outcome, not just the deliverable.
-
-----
-
-About_credentials: Led by a principal consultant with a background in data engineering, analytics, and technical project management across federal and commercial clients — holding active certifications including PMP, Certified ScrumMaster, and AWS Solutions Architect – Associate.
+Unlike legacy consultancies that hand off client work to junior staff, our direct-embed model guarantees you work exclusively with senior engineers and strategists from day one to final deployment.
 
 ----
 
-Contact_heading: Tell us where it's breaking down
+About_credentials: Led by a principal consultant with extensive federal and commercial client experience across enterprise data architecture, analytics engineering, and modern stack implementations—holding active certifications including PMP, Certified ScrumMaster (CSM), and AWS Certified Solutions Architect – Associate.
 
 ----
 
-Contact_text: Whether it's one specific project or a general sense that your data and systems could be working harder for you, we're happy to talk it through — no pitch deck required.
+Contact_heading: Ready to scale your data capabilities?
+
+----
+
+Contact_text: Whether you need to build a modern data platform from the ground up, refactor existing infrastructure, or embed predictive AI into your operations, let's talk through your goals—no pitch deck required.
 
 ----
 
