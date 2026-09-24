@@ -10,8 +10,29 @@ body {
 
 .header {
   background: var(--color-ink);
-  margin: 0 calc(var(--padding) * -1) 4rem;
-  padding: 0 var(--padding);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  margin: 0;
+  padding: 1.25rem var(--padding);
+  box-sizing: border-box;
+}
+
+/* Header is now fixed/out of flow, so push the page content down by
+   roughly its rendered height to avoid the hero being hidden under it. */
+.main {
+  display: block;
+  padding-top: 5.5rem;
+}
+
+@media screen and (max-width: 40rem) {
+  /* Nav items wrap to a second row on narrow screens, so the header
+     is taller there — give the content a bit more clearance. */
+  .main {
+    padding-top: 8rem;
+  }
 }
 
 .logo {

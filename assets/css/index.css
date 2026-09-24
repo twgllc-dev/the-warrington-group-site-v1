@@ -47,9 +47,9 @@ img {
   width: 100%;
 }
 body {
-  padding: var(--padding);
-  max-width: 70rem;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  max-width: none;
 }
 li {
   list-style: none;
@@ -442,5 +442,3 @@ hr {
 .note-excerpt-date {
   color: var(--color-text-grey);
 }
-
-
