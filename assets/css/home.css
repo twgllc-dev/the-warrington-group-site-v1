@@ -95,7 +95,13 @@ body {
 
 /* Hero */
 .hero {
-  padding: 4rem 0 5rem;
+  position: relative;
+  padding: 6rem 0 7rem;
+  background-image: url('/assets/images/hero-bg-gold.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  isolation: isolate;
 }
 .hero-inner {
   max-width: 40rem;
@@ -107,12 +113,12 @@ body {
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
-  color: var(--color-ink);
+  color: var(--color-paper);
 }
 .hero-subheadline {
   font-size: 1.125rem;
   line-height: 1.55;
-  color: var(--color-ink-soft);
+  color: rgba(255, 255, 255, 0.78);
   max-width: 34rem;
   margin-bottom: 2.25rem;
 }
@@ -120,6 +126,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+.hero .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--color-paper);
+}
+.hero .btn-secondary:hover {
+  border-color: var(--color-paper);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* Shared section head */
