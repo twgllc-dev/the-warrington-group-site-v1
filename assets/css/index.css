@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -42,6 +43,7 @@ html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background: var(--color-background);
+  height: 100%;
 }
 img {
   width: 100%;
@@ -50,6 +52,9 @@ body {
   margin: 0;
   padding: 0;
   max-width: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 li {
   list-style: none;
