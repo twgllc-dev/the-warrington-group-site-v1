@@ -11,7 +11,7 @@ $directEmail = $site->homePage()->contact_email()->or('contactus@thewarringtongr
 <div class="inquiry-page">
 
   <div class="inquiry-intro">
-    <h1><?= $page->headline()->or("Let's talk")->esc() ?></h1>
+    <h1><?= $page->headline()->or("Connect With Us!")->esc() ?></h1>
     <p><?= $page->intro()->or('Tell us a little about what you have in mind and we will reply directly.')->esc() ?></p>
     <p class="inquiry-direct">
       Prefer email? <a href="mailto:<?= esc($directEmail, 'attr') ?>"><?= esc($directEmail) ?></a>
