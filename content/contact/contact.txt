@@ -6,11 +6,11 @@ Headline: Let's talk
 
 ----
 
-Intro: Tell us a little about what you have in mind. A senior member of our team will read it and reply directly.
+Intro: Tell us a little about what you have in mind. A senior member of our team will follow up with you upon review.
 
 ----
 
-Success_heading: Thanks, we've got it.
+Success_heading: Thanks, we've got it!
 
 ----
 

@@ -11,7 +11,9 @@ use Kirby\Toolkit\V;
  */
 return function ($kirby, $page) {
 
-    $interests = ['Client', 'Partner', 'General'];
+    $interests = ['Client - I want to discuess new/exisiting business opportunities or proposal requests (RFI/RFP).',
+        'Partner - I want to explore partnership opportunities with TWG.',
+        'General - General questions, information requests, etc.'];
     $form      = ['interest' => '', 'name' => '', 'email' => '', 'company' => '', 'message' => ''];
     $errors    = [];
     $sent      = get('sent') === '1';

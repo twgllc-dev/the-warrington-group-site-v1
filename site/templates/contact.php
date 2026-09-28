@@ -4,7 +4,7 @@
  * Logic (validation, saving, email) lives in site/controllers/contact.php.
  * Styles: assets/css/templates/contact.css  |  JS: assets/js/templates/contact.js
  */
-$directEmail = $site->homePage()->contact_email()->or('hello@thewarringtongroup.com');
+$directEmail = $site->homePage()->contact_email()->or('contactus@thewarringtongroup.com');
 ?>
 <?php snippet('header') ?>
 
@@ -65,13 +65,13 @@ $directEmail = $site->homePage()->contact_email()->or('hello@thewarringtongroup.
         </div>
 
         <div class="inquiry-field">
-          <label for="company">Company or organization <span class="inquiry-optional">(optional)</span></label>
+          <label for="company">Company or Organization <span class="inquiry-optional">(optional)</span></label>
           <input type="text" id="company" name="company" value="<?= esc($form['company'], 'attr') ?>"
                  maxlength="160" autocomplete="organization">
         </div>
 
         <div class="inquiry-field<?= isset($errors['message']) ? ' has-error' : '' ?>">
-          <label for="message">How can we help?</label>
+          <label for="message">How can we help you?</label>
           <textarea id="message" name="message" rows="5" required maxlength="5000"
                     <?= isset($errors['message']) ? 'aria-invalid="true" aria-describedby="err-message"' : '' ?>><?= esc($form['message']) ?></textarea>
           <?php if (isset($errors['message'])): ?><p class="inquiry-error" id="err-message"><?= esc($errors['message']) ?></p><?php endif ?>
