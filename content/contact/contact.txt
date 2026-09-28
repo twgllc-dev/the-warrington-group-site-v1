@@ -1,0 +1,17 @@
+Title: Contact
+
+----
+
+Headline: Let's talk
+
+----
+
+Intro: Tell us a little about what you have in mind. A senior member of our team will read it and reply directly.
+
+----
+
+Success_heading: Thanks, we've got it.
+
+----
+
+Success_message: We'll follow up at the email address you provided.

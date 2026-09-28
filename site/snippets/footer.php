@@ -24,7 +24,7 @@
       <a href="<?= $home->url() ?>#services">Services</a>
       <a href="<?= $home->url() ?>#approach">Approach</a>
       <a href="<?= $home->url() ?>#about">About</a>
-      <a href="<?= $home->url() ?>#contact">Contact</a>
+      <a href="<?= url('contact') ?>">Contact</a>
     </nav>
     <p class="site-footer-copyright">&copy; <?= date('Y') ?> <?= $site->title()->esc() ?></p>
   </footer>

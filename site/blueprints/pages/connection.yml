@@ -1,0 +1,41 @@
+title: Connection
+icon: user
+
+options:
+  create: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+
+fields:
+  interest:
+    label: Interest type
+    type: select
+    options:
+      Client: Client
+      Partner: Partner
+      General: General
+    width: 1/3
+  name:
+    label: Name
+    type: text
+    width: 1/3
+  email:
+    label: Email
+    type: email
+    width: 1/3
+  company:
+    label: Company / Organization
+    type: text
+  message:
+    label: Message
+    type: textarea
+    size: large
+  submitted:
+    label: Submitted
+    type: text
+    width: 1/2
+  notified:
+    label: Notification email sent
+    type: toggle
+    width: 1/2

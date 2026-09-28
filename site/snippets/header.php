@@ -85,7 +85,7 @@
       <a href="<?= $home->url() ?>#services">Services</a>
       <a href="<?= $home->url() ?>#approach">Approach</a>
       <a href="<?= $home->url() ?>#about">About</a>
-      <a class="menu-cta" href="<?= $home->url() ?>#contact">Contact</a>
+      <a class="menu-cta" href="<?= url('contact') ?>"<?= $page->template()->name() === 'contact' ? ' aria-current="page"' : '' ?>>Contact</a>
     </nav>
   </header>
 

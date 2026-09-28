@@ -3,6 +3,12 @@
 use Kirby\Cms\App as Kirby;
 use Kirby\Http\Response;
 
+// SMTP credentials live in an untracked file (this repo is public).
+// See site/config/secrets.example.php. If the file is absent, Kirby falls back
+// to PHP's mail(), which is unreliable on most managed hosts.
+$secretsFile = __DIR__ . '/secrets.php';
+$secrets     = is_file($secretsFile) ? (require $secretsFile) : [];
+
 return [
 
     // --- existing production settings (from twg-kirby-cms-workflow.md §5) ---
@@ -13,7 +19,13 @@ return [
         'install' => false,     // only ever true briefly, during initial setup
     ],
 
-    // --- new: "Stay in Contact" form handler for the coming-soon page ---
+    // --- Contact Us page: notification email settings ---
+    // Submissions are saved under content/connections/ and emailed here.
+    'twg.contact.to'   => 'thewarrgroupllc@gmail.com',
+    'twg.contact.from' => 'noreply@thewarringtongroup.com',
+    'email'            => isset($secrets['smtp']) ? ['transport' => $secrets['smtp']] : [],
+
+    // --- "Stay in Contact" form handler for the coming-soon page ---
     'routes' => [
         [
             'pattern' => 'stay-in-contact',

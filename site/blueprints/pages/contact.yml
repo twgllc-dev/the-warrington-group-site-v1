@@ -1,0 +1,25 @@
+title: Contact Page
+icon: email
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+
+fields:
+  headline:
+    label: Headline
+    type: text
+  intro:
+    label: Intro text
+    type: textarea
+    size: small
+  success_heading:
+    label: Confirmation heading
+    type: text
+    width: 1/2
+  success_message:
+    label: Confirmation message
+    type: textarea
+    size: small

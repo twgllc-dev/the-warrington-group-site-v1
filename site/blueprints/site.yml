@@ -32,3 +32,5 @@ columns:
           - about
           - home
           - default
+          - contact
+          - connections

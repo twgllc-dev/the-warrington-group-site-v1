@@ -1,0 +1,177 @@
+/* Contact Us — uses the site tokens defined in index.css */
+
+.inquiry-page {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3.5rem var(--padding) 5rem;
+}
+
+.inquiry-intro h1 {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  margin-bottom: 1rem;
+}
+.inquiry-intro p {
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+  max-width: 26rem;
+}
+.inquiry-direct {
+  margin-top: 1.5rem;
+  font-size: 0.9375rem;
+}
+.inquiry-direct a {
+  color: var(--color-ink);
+  border-bottom: 1px solid var(--color-gold);
+}
+.inquiry-direct a:hover {
+  color: var(--color-gold-deep);
+}
+
+/* Form */
+.inquiry-form {
+  display: grid;
+  gap: 1.25rem;
+}
+.inquiry-row {
+  display: grid;
+  gap: 1.25rem;
+}
+.inquiry-field label {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  margin-bottom: 0.4rem;
+}
+.inquiry-optional {
+  font-weight: 400;
+  color: var(--color-ink-soft);
+}
+
+.inquiry-field input,
+.inquiry-field select,
+.inquiry-field textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+  font-size: 1rem;              /* 16px keeps iOS from zooming on focus */
+  color: var(--color-ink);
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: 0;
+  transition: border-color 0.15s ease;
+}
+.inquiry-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+  line-height: 1.5;
+}
+.inquiry-field select {
+  appearance: none;
+  padding-right: 2.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%23141414' stroke-width='1.5'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+}
+.inquiry-field select:invalid {
+  color: var(--color-ink-soft);
+}
+.inquiry-field input:hover,
+.inquiry-field select:hover,
+.inquiry-field textarea:hover {
+  border-color: var(--color-gold);
+}
+.inquiry-field input:focus-visible,
+.inquiry-field select:focus-visible,
+.inquiry-field textarea:focus-visible {
+  outline: 2px solid var(--color-gold-deep);
+  outline-offset: 1px;
+  border-color: var(--color-ink);
+}
+
+/* Errors */
+.inquiry-field.has-error input,
+.inquiry-field.has-error select,
+.inquiry-field.has-error textarea {
+  border-color: #a4302a;
+}
+.inquiry-error {
+  margin-top: 0.4rem;
+  font-size: 0.875rem;
+  color: #a4302a;
+}
+.inquiry-alert {
+  padding: 0.85rem 1rem;
+  font-size: 0.9375rem;
+  color: #7d2520;
+  background: #fbeeec;
+  border-left: 2px solid #a4302a;
+}
+
+/* Honeypot */
+.inquiry-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.inquiry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+  margin-top: 0.25rem;
+}
+.inquiry-actions .btn {
+  cursor: pointer;
+  padding: 1rem 1.75rem;
+}
+.inquiry-actions .btn[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+.inquiry-note {
+  font-size: 0.8125rem;
+  color: var(--color-ink-soft);
+}
+
+/* Confirmation */
+.inquiry-success {
+  border-left: 2px solid var(--color-gold);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+}
+.inquiry-success h2 {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
+}
+.inquiry-success p {
+  color: var(--color-ink-soft);
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 40rem) {
+  .inquiry-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 60rem) {
+  .inquiry-page {
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    padding-top: 5rem;
+  }
+}

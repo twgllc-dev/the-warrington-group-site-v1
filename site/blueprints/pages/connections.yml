@@ -1,0 +1,32 @@
+title: Connections
+icon: users
+
+options:
+  create: false     # entries are only created by the Contact page form
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+
+sections:
+  connections:
+    type: pages
+    headline: Submissions
+    template: connection
+    status: all
+    layout: table
+    sortBy: submitted desc
+    columns:
+      title:
+        label: Name
+      interest:
+        label: Interest
+      email:
+        label: Email
+      company:
+        label: Company
+      submitted:
+        label: Submitted
+      notified:
+        label: Emailed
+        mobile: false
