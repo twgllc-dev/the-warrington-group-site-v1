@@ -3,3 +3,9 @@
 /site/accounts/*
 !/site/accounts/.gitkeep
 .env
+
+# Contact-form submissions contain personal data and this repo is public.
+/content/connections/*/
+/content/leads/*/
+# SMTP credentials (see site/config/secrets.example.php)
+/site/config/secrets.php
