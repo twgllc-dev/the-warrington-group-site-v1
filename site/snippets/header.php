@@ -39,22 +39,22 @@
     time (?v=...), so a changed file gets a new URL and bypasses the
     browser and Cloudflare caches. Files that don't exist are skipped.
 
-    `@auto` (template-specific CSS) is loaded separately with the
-    standard `css()` helper and is not versioned. If you edit those
-    files often, add their explicit paths to the list below.
+    The last entry is the current template's own stylesheet
+    (e.g. assets/css/templates/home.css). This replaces Kirby's
+    `@auto` helper, which loads the same file without versioning.
   */
   foreach ([
     'assets/css/prism.css',
     'assets/css/lightbox.css',
     'assets/css/index.css',
     'assets/css/home.css',
+    'assets/css/templates/' . $page->template()->name() . '.css',
   ] as $file):
     $asset = asset($file);
     if ($asset->exists() === false) continue;
   ?>
   <link rel="stylesheet" href="<?= url($file) ?>?v=<?= $asset->modified() ?>">
   <?php endforeach ?>
-  <?= css('@auto') ?>
 
   <?php
   /*

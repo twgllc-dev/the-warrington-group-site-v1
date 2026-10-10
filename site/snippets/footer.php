@@ -29,12 +29,23 @@
     <p class="site-footer-copyright">&copy; <?= date('Y') ?> <?= $site->title()->esc() ?></p>
   </footer>
 
-  <?= js([
+  <?php
+  /*
+    Cache-busting for scripts, same approach as the stylesheets in header.php.
+    Order matters: prism, lightbox, index, then the current template's own
+    script (replaces Kirby's `@auto`). Missing files are skipped.
+  */
+  foreach ([
     'assets/js/prism.js',
     'assets/js/lightbox.js',
     'assets/js/index.js',
-    '@auto'
-  ]) ?>
+    'assets/js/templates/' . $page->template()->name() . '.js',
+  ] as $file):
+    $asset = asset($file);
+    if ($asset->exists() === false) continue;
+  ?>
+  <script src="<?= url($file) ?>?v=<?= $asset->modified() ?>"></script>
+  <?php endforeach ?>
 
 </body>
 </html>
