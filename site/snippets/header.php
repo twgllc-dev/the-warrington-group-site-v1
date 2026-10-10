@@ -35,18 +35,26 @@
 
   <?php
   /*
-    Stylesheets can be included using the `css()` helper.
-    Kirby also provides the `js()` helper to include script file.
-    More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers
+    Cache-busting: each stylesheet URL carries the file's last-modified
+    time (?v=...), so a changed file gets a new URL and bypasses the
+    browser and Cloudflare caches. Files that don't exist are skipped.
+
+    `@auto` (template-specific CSS) is loaded separately with the
+    standard `css()` helper and is not versioned. If you edit those
+    files often, add their explicit paths to the list below.
   */
-  ?>
-  <?= css([
+  foreach ([
     'assets/css/prism.css',
     'assets/css/lightbox.css',
     'assets/css/index.css',
     'assets/css/home.css',
-    '@auto'
-  ]) ?>
+  ] as $file):
+    $asset = asset($file);
+    if ($asset->exists() === false) continue;
+  ?>
+  <link rel="stylesheet" href="<?= url($file) ?>?v=<?= $asset->modified() ?>">
+  <?php endforeach ?>
+  <?= css('@auto') ?>
 
   <?php
   /*
