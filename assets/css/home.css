@@ -222,6 +222,36 @@ body {
   max-width: 34rem;
 }
 
+/* Technology showcase — logos only, single row, evenly spaced */
+.tech-stack {
+  padding: 3rem var(--padding);
+  border-top: 1px solid var(--color-line);
+  background: var(--color-paper-deep);
+}
+.tech-logos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+.tech-logos li {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+.tech-logos img {
+  width: auto;            /* override global img { width: 100% } */
+  max-width: 100%;
+  height: clamp(1.5rem, 4vw, 3rem);
+  object-fit: contain;
+  display: block;
+}
+
 /* About */
 .about {
   display: grid;

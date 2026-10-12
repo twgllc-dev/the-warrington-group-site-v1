@@ -64,6 +64,32 @@
   </ol>
 </section>
 
+<?php
+/*
+  Technology showcase: logos only, one row, evenly spaced.
+  To add/remove/reorder a technology, edit this list and drop the
+  matching SVG into assets/images/tech/.
+*/
+$techStack = [
+  'apachespark'    => 'Apache Spark',
+  'databricks'     => 'Databricks',
+  'dbt'            => 'dbt',
+  'googlebigquery' => 'Google BigQuery',
+  'snowflake'      => 'Snowflake',
+  'looker'         => 'Looker',
+  'tableau'        => 'Tableau',
+];
+?>
+<section id="stack" class="tech-stack" aria-label="Featured technologies">
+  <ul class="tech-logos">
+    <?php foreach ($techStack as $file => $label): ?>
+    <li>
+      <img src="<?= url('assets/images/tech/' . $file . '.svg') ?>" alt="<?= esc($label) ?>" title="<?= esc($label) ?>" loading="lazy" decoding="async">
+    </li>
+    <?php endforeach ?>
+  </ul>
+</section>
+
 <section id="about" class="about">
   <div class="about-text">
     <h2><?= $page->about_heading()->esc() ?></h2>
