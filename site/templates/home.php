@@ -27,8 +27,11 @@
 
   <div class="ledger">
     <?php foreach ($page->services()->toStructure() as $service): ?>
-    <div class="ledger-row">
-      <div class="ledger-name"><?= $service->name()->esc() ?></div>
+    <details class="ledger-row">
+      <summary class="ledger-summary">
+        <span class="ledger-name"><?= $service->name()->esc() ?></span>
+        <span class="ledger-toggle" aria-hidden="true"></span>
+      </summary>
       <div class="ledger-body">
         <p class="ledger-description"><?= $service->description()->esc() ?></p>
         <?php if ($service->capabilities()->isNotEmpty()): ?>
@@ -39,7 +42,7 @@
         </ul>
         <?php endif ?>
       </div>
-    </div>
+    </details>
     <?php endforeach ?>
   </div>
 </section>

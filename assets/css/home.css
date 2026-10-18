@@ -157,16 +157,68 @@ body {
   border-top: 1px solid var(--color-line);
 }
 .ledger-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
-  padding: 2rem 0;
   border-bottom: 1px solid var(--color-line);
+}
+
+/* Collapsible row: the summary is always visible, the body toggles */
+.ledger-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+.ledger-summary::-webkit-details-marker {
+  display: none;
+}
+.ledger-summary:focus-visible {
+  outline: 2px solid var(--color-gold-deep);
+  outline-offset: 4px;
 }
 .ledger-name {
   font-family: var(--font-family-serif);
   font-size: 1.375rem;
   color: var(--color-gold-deep);
+}
+
+/* Expand/collapse button — same gold as the title text */
+.ledger-toggle {
+  position: relative;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--color-gold-deep);
+  border-radius: 50%;
+  color: var(--color-gold-deep);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.ledger-toggle::before,
+.ledger-toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.75rem;
+  height: 1.5px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+.ledger-toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);   /* vertical bar → "+" */
+}
+.ledger-summary:hover .ledger-toggle {
+  background: var(--color-gold-deep);
+  color: var(--color-paper);
+}
+.ledger-row[open] .ledger-toggle::after {
+  transform: translate(-50%, -50%) rotate(0deg);    /* collapses into "−" */
+}
+
+.ledger-body {
+  padding: 0 0 2rem;
 }
 .ledger-description {
   color: var(--color-ink);
@@ -466,10 +518,6 @@ body {
 @media screen and (min-width: 60rem) {
   .hero {
     padding: 6rem var(--padding) 7rem;
-  }
-  .ledger-row {
-    grid-template-columns: 14rem 1fr;
-    gap: 2rem;
   }
   .about {
     grid-template-columns: 1.4fr 1fr;
