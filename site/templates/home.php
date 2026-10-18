@@ -66,7 +66,8 @@
 
 <?php
 /*
-  Technology showcase: logos only, one row, evenly spaced.
+  Technology showcase: centered heading + subheading, then logos
+  with names in one evenly spaced row.
   To add/remove/reorder a technology, edit this list and drop the
   matching SVG into assets/images/tech/.
 */
@@ -80,11 +81,16 @@ $techStack = [
   'tableau'        => 'Tableau',
 ];
 ?>
-<section id="stack" class="tech-stack" aria-label="Featured technologies">
+<section id="stack" class="tech-stack" aria-labelledby="stack-heading">
+  <div class="tech-head">
+    <h2 id="stack-heading">Our Trusted Technologies</h2>
+    <p>The proven platforms we put to work to deliver maximum value and lasting impact for every client.</p>
+  </div>
   <ul class="tech-logos">
     <?php foreach ($techStack as $file => $label): ?>
     <li>
-      <img src="<?= url('assets/images/tech/' . $file . '.svg') ?>" alt="<?= esc($label) ?>" title="<?= esc($label) ?>" loading="lazy" decoding="async">
+      <img src="<?= url('assets/images/tech/' . $file . '.svg') ?>" alt="" loading="lazy" decoding="async">
+      <span class="tech-name"><?= esc($label) ?></span>
     </li>
     <?php endforeach ?>
   </ul>

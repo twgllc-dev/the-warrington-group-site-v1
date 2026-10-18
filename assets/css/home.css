@@ -222,34 +222,75 @@ body {
   max-width: 34rem;
 }
 
-/* Technology showcase — logos only, single row, evenly spaced */
+/* Technology showcase — centered heading, logos + names in an evenly spaced row */
 .tech-stack {
-  padding: 3rem var(--padding);
+  padding: 4rem var(--padding);
   border-top: 1px solid var(--color-line);
   background: var(--color-paper-deep);
 }
+.tech-head {
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+.tech-head h2 {
+  font-family: var(--font-family-serif);
+  font-weight: 500;
+  font-size: 1.75rem;
+  color: var(--color-ink);
+  margin-bottom: 0.6rem;
+}
+.tech-head p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-ink-soft);
+}
 .tech-logos {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 1.75rem;
   max-width: 64rem;
   margin: 0 auto;
 }
 .tech-logos li {
-  flex: 1 1 0;
+  flex: 0 0 25%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 0.75rem;
   min-width: 0;
+  text-align: center;
 }
 .tech-logos img {
   width: auto;            /* override global img { width: 100% } */
   max-width: 100%;
-  height: clamp(1.5rem, 4vw, 3rem);
+  height: 2.25rem;
   object-fit: contain;
   display: block;
+}
+.tech-name {
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  color: var(--color-ink-soft);
+}
+
+/* One single row from tablet width up */
+@media screen and (min-width: 40rem) {
+  .tech-logos {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .tech-logos li {
+    flex: 1 1 0;
+  }
+  .tech-logos img {
+    height: clamp(2rem, 4vw, 3rem);
+  }
+  .tech-name {
+    font-size: 0.875rem;
+  }
 }
 
 /* About */
