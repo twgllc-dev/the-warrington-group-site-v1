@@ -85,17 +85,27 @@ Approach_steps:
 
 ----
 
-About_heading: Senior Expertise. Zero Bench. Direct Embed.
+About_heading: Big-Firm Expertise. Boutique Intimacy.
 
 ----
 
-About_text: Headquartered in Washington, D.C. with dual operations in New Jersey, The Warrington Group serves clients locally across the DC metro and NY/NJ areas, as well as remotely nationwide. We partner with organizations across healthcare, finance, retail, media, sports & entertainment, and software/tech.
+About_text: Headquartered in Washington, D.C., The Warrington Group works remotely with clients across the United States and around the world. We bring enterprise-grade data and AI solutions to small and medium-sized businesses, at a fraction of the cost and with twice the intimacy.
 
-Unlike legacy consultancies that hand off client work to junior staff, our direct-embed model guarantees you work exclusively with senior engineers and strategists from day one to final deployment.
+We embed directly with your team as if we were one of your own. Our role goes beyond service: we build alongside your people so you can own every solution and process we implement, and keep scaling them yourselves long after we've gone.
+
+We partner with organizations across healthcare, finance, retail, media, sports & entertainment, and software/tech.
 
 ----
 
-About_credentials: Led by a principal consultant with extensive federal and commercial client experience across enterprise data architecture, analytics engineering, and modern stack implementations—holding active certifications including PMP, Certified ScrumMaster (CSM), and AWS Certified Solutions Architect – Associate.
+About_credentials: Led by our founder and principal consultant, who brings extensive experience across both the federal and commercial sectors, having delivered cutting-edge data, digital, and strategic solutions while at Accenture, Google, Pinterest, and Booz Allen Hamilton. At The Warrington Group our leaders also hold industry-leading certifications in project management, Agile and Scrum, and cloud platforms including AWS, Google Cloud, and Azure. We pursue these credentials to deepen our subject-matter expertise and hold every engagement to a high standard of delivery, so our customers can rely on proven guidance at every step.
+
+----
+
+About_button_label: Learn More About Us
+
+----
+
+About_button_link: /contact
 
 ----
 

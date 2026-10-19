@@ -365,6 +365,9 @@ body {
 .about-text p + p {
   margin-top: 1rem;
 }
+.about-actions {
+  margin-top: 1.75rem;
+}
 .about-credentials {
   border-left: 2px solid var(--color-gold);
   padding-left: 1.25rem;

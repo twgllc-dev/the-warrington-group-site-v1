@@ -83,6 +83,13 @@ sections:
         label: Credentials line
         type: textarea
         size: small
+      about_button_label:
+        label: Button label
+        type: text
+      about_button_link:
+        label: Button link
+        type: text
+        help: Page path or URL, e.g. /contact or #contact
 
   contact:
     type: fields

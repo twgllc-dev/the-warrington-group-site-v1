@@ -103,6 +103,13 @@ $techStack = [
   <div class="about-text">
     <h2><?= $page->about_heading()->esc() ?></h2>
     <?= $page->about_text()->kirbytext() ?>
+    <?php if ($page->about_button_label()->isNotEmpty()): ?>
+    <div class="about-actions">
+      <a class="btn btn-primary" href="<?= $page->about_button_link()->or('/contact')->esc() ?>">
+        <?= $page->about_button_label()->esc() ?>
+      </a>
+    </div>
+    <?php endif ?>
   </div>
   <?php if ($page->about_credentials()->isNotEmpty()): ?>
   <div class="about-credentials">
