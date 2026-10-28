@@ -89,7 +89,7 @@ About_heading: Big-Firm Expertise. Boutique Intimacy.
 
 ----
 
-About_text: Headquartered in the District Of Columbia, The Warrington Group works remotely with clients across the United States and around the world. We bring enterprise-grade data and AI solutions to small and medium-sized businesses, at a fraction of the cost and with twice the intimacy.
+About_text: Headquartered in the District of Columbia, The Warrington Group works remotely with clients across the United States and around the world. We bring enterprise-grade data and AI solutions to small and medium-sized businesses, at a fraction of the cost and with twice the intimacy.
 
 We embed directly with your team as if we were one of your own. Our role goes beyond service: we build alongside your people so you can own every solution and process we implement, and keep scaling them yourselves long after we've gone.
 
