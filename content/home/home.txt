@@ -30,7 +30,7 @@ Services_heading: Where We Deliver Impact
 
 ----
 
-Services_intro: Fragmented data and manual work slow down growth. We provide high-velocity technical capabilities across three core pillars—whether you need to build from scratch, scale existing systems, or automate business workflows.
+Services_intro: Fragmented data and manual work slow down growth. We provide high-velocity technical capabilities across three core pillars—whether you need to build from scratch, scale existing systems, or automate business workflows, we can help.
 
 ----
 
@@ -38,7 +38,7 @@ Services:
 
 -
   name: Full-Stack Analytics
-  description: Every layer of your analytics, working together. We design and build the complete data stack, from raw source data to trusted, decision-ready reporting, so you can see your whole business clearly and scale with confidence.
+  description: Every layer of your data, working together. We design and build the complete analytics stack, from raw source data to trusted, decision-ready reporting, so you can see your whole business clearly and scale with confidence.
   capabilities: |
     Data Engineering & Automated ETL/ELT Pipelines | Automatically gathering data from all your tools and delivering it to one place, with no manual copying.
     Data Modeling, Transformation & Quality | Cleaning and organizing that data so everyone works from the same accurate numbers.
@@ -58,7 +58,7 @@ Services:
   name: Embedded Strategy & Advisory
   description: Get dedicated senior technical execution without the overhead of building an in-house data department or managing rigid third-party vendors.
   capabilities: |
-    Modern Data Stack Audits & Roadmaps | A clear review of what you have today and a practical plan for what to build next.
+    Modern Data Stack Audits & Roadmaps | A clear review of what you have today, data-wise, and a practical plan for what to build next.
     Data Governance, Security & Compliance | Making sure your data is protected, well managed, and meets the rules your industry requires.
     System Migration & Optimization | Moving you off outdated tools onto modern ones, and tuning them to run faster and cost less.
     Team Enablement & Technical Leadership | Training and guiding your people so they can run and grow everything on their own.
@@ -89,15 +89,15 @@ About_heading: Big-Firm Expertise. Boutique Intimacy.
 
 ----
 
-About_text: Headquartered in Washington, D.C., The Warrington Group works remotely with clients across the United States and around the world. We bring enterprise-grade data and AI solutions to small and medium-sized businesses, at a fraction of the cost and with twice the intimacy.
+About_text: Headquartered in The District Of Columbia, The Warrington Group works remotely with clients across the United States and around the world. We bring enterprise-grade data and AI solutions to small and medium-sized businesses, at a fraction of the cost and with twice the intimacy.
 
 We embed directly with your team as if we were one of your own. Our role goes beyond service: we build alongside your people so you can own every solution and process we implement, and keep scaling them yourselves long after we've gone.
 
-We partner with organizations across healthcare, finance, retail, media, sports & entertainment, and software/tech.
+We’ve supported major organizations across healthcare, finance, retail, media, sports & entertainment, and tech, with room for any other industry.
 
 ----
 
-About_credentials: Led by our founder and principal consultant, who brings extensive experience across both the federal and commercial sectors, having delivered cutting-edge data, digital, and strategic solutions while at Accenture, Google, Pinterest, and Booz Allen Hamilton. At The Warrington Group our leaders also hold industry-leading certifications in project management, Agile and Scrum, and cloud platforms including AWS, Google Cloud, and Azure. We pursue these credentials to deepen our subject-matter expertise and hold every engagement to a high standard of delivery, so our customers can rely on proven guidance at every step.
+About_credentials: Led by our founder and principal consultant, who brings extensive experience across both the federal and commercial sectors, having delivered cutting-edge data, digital, and strategic solutions for the likes of Accenture, Google, Pinterest, and Booz Allen Hamilton. At The Warrington Group our leaders also hold industry-leading certifications in project management, Agile and Scrum, and cloud platforms including AWS, Google Cloud, and Azure. We pursue these credentials to deepen our subject-matter expertise and hold every engagement to a high standard of delivery, so our customers can rely on proven guidance at every step.
 
 ----
 
