@@ -146,7 +146,7 @@ $techStack = [
     <p><?= $page->contact_text()->esc() ?></p>
     <?php if ($page->contact_email()->isNotEmpty()): ?>
     <a class="btn btn-primary" href="mailto:<?= $page->contact_email()->esc() ?>">
-      <?= $page->contact_email()->esc() ?>
+      Send Us An Email
     </a>
     <?php endif ?>
   </div>

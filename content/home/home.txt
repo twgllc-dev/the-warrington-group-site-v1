@@ -73,7 +73,7 @@ Approach_steps:
 
 -
   title: Learn Your Business
-  description: We learn your business inside and out — your goals, your data, and where the biggest wins are hiding. Then we agree on clear milestones before any building begins, so everyone knows what success looks like.
+  description: We learn your business inside and out: your goals, your data, and where the biggest wins are hiding. Then we agree on clear milestones before any building begins, so everyone knows what success looks like.
 
 -
   title: Build Alongside You
@@ -117,7 +117,7 @@ Contact_text: Whether you need to build a modern data platform from the ground u
 
 ----
 
-Contact_email: hello@thewarringtongroup.com
+Contact_email: thewarrgroupllc@gmail.com
 
 ----
 
