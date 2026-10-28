@@ -2,11 +2,11 @@ Title: Home
 
 ----
 
-Hero_headline: Enterprise-grade data platforms and AI automation, embedded directly into your team
+Hero_headline: Smarter Data. Faster Growth. Built Alongside You.
 
 ----
 
-Hero_subheadline: The Warrington Group is a modern analytics engineering and AI automation consultancy. We embed directly with startups, mid-market businesses, and enterprise teams to design, scale, and optimize high-impact data systems.
+Hero_subheadline: Full-Stack Analytics, Automation & AI Solutioning, Embedded in Your Team. We partner with startups, mid-market, and enterprise teams to turn your data into your next level of growth and performance.
 
 ----
 
@@ -37,31 +37,31 @@ Services_intro: Fragmented data and manual work slow down growth. We provide hig
 Services:
 
 -
-  name: Analytics Engineering & Infrastructure
-  description: Build a modern, resilient data foundation. We transform raw, multi-source data into clean, operational pipelines and trustworthy reporting layers designed for seamless scale.
+  name: Full-Stack Analytics
+  description: Every layer of your analytics, working together. We design and build the complete data stack, from raw source data to trusted, decision-ready reporting, so you can see your whole business clearly and scale with confidence.
   capabilities: |
-    Cloud Lakehouse Architectures (Snowflake, Databricks, BigQuery)
-    Modern Data Modeling & Transformation (dbt)
-    Automated Ingestion & ETL/ELT Pipelines
-    Self-Service BI & Executive Dashboards (Looker, Tableau, Power BI)
+    Data Engineering & Automated ETL/ELT Pipelines | Automatically gathering data from all your tools and delivering it to one place, with no manual copying.
+    Data Modeling, Transformation & Quality | Cleaning and organizing that data so everyone works from the same accurate numbers.
+    Database, Warehouse & Cloud Platform Architecture | A secure, central home for your data that grows as your business does.
+    Reporting, Dashboards & Self-Service BI | Easy-to-read, up-to-date reports your team can explore on their own, without waiting on an analyst.
 
 -
   name: AI & Machine Learning Automation
   description: Turn manual tasks into intelligent, autonomous systems. We pair custom machine learning and workflow automation to increase efficiency, accuracy, and performance across your operations.
   capabilities: |
-    Predictive Analytics & Forecasting Models
-    Automated Data Quality & Pipeline Monitoring
-    Workflow & Reporting Automation
-    Intelligent Data Processing & LLM Integrations
+    Predictive Analytics & Forecasting Models | Using your past data to anticipate what's coming, such as demand, sales, or customer behavior.
+    Automated Data Quality & Pipeline Monitoring | Systems that watch your data around the clock and flag problems before they affect decisions.
+    Workflow & Reporting Automation | Handing repetitive tasks and recurring reports to software so your team's time goes to higher-value work.
+    Intelligent Data Processing & LLM Integrations | Using AI tools, like the ones behind ChatGPT, to read, sort, and summarize information for you.
 
 -
   name: Embedded Strategy & Advisory
   description: Get dedicated senior technical execution without the overhead of building an in-house data department or managing rigid third-party vendors.
   capabilities: |
-    Modern Data Stack Audits & Roadmaps
-    Data Governance, Security & Compliance
-    System Migration & Optimization
-    Team Enablement & Technical Leadership
+    Modern Data Stack Audits & Roadmaps | A clear review of what you have today and a practical plan for what to build next.
+    Data Governance, Security & Compliance | Making sure your data is protected, well managed, and meets the rules your industry requires.
+    System Migration & Optimization | Moving you off outdated tools onto modern ones, and tuning them to run faster and cost less.
+    Team Enablement & Technical Leadership | Training and guiding your people so they can run and grow everything on their own.
 
 ----
 

@@ -246,6 +246,63 @@ body {
   background: var(--color-ink-soft);
 }
 
+/* "In plain English" tap-to-reveal (CSS-only: checkbox + label) */
+.plain-toggle {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+.plain-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  font-family: var(--font-family-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--color-gold-deep);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.plain-toggle-label::before {
+  content: "+";
+  font-size: 1rem;
+  line-height: 1;
+}
+.plain-toggle-label:hover,
+.plain-toggle:checked + .plain-toggle-label {
+  background: var(--color-gold-deep);
+  border-color: var(--color-gold-deep);
+  color: var(--color-paper);
+}
+.plain-toggle:checked + .plain-toggle-label::before {
+  content: "\2212";   /* minus sign */
+}
+.plain-toggle:focus-visible + .plain-toggle-label {
+  outline: 2px solid var(--color-gold-deep);
+  outline-offset: 2px;
+}
+.cap-term {
+  display: block;
+}
+.cap-plain {
+  display: none;
+  margin-top: 0.2rem;
+  font-family: var(--font-family-serif);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-gold-deep);
+}
+.plain-toggle:checked ~ .ledger-capabilities .cap-plain {
+  display: block;
+}
+
 /* Approach — a genuine sequence */
 .steps {
   display: grid;

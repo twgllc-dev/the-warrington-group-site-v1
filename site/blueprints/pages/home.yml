@@ -51,7 +51,7 @@ sections:
           description:
             type: textarea
           capabilities:
-            label: Capabilities (one per line)
+            label: Capabilities (one per line: Technical term | Plain-English explanation)
             type: textarea
             size: small
 

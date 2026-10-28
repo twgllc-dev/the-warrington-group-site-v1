@@ -34,10 +34,31 @@
       </summary>
       <div class="ledger-body">
         <p class="ledger-description"><?= $service->description()->esc() ?></p>
-        <?php if ($service->capabilities()->isNotEmpty()): ?>
+        <?php
+        // Each line: "Technical term | Plain-English explanation" (explanation optional)
+        $caps = [];
+        foreach ($service->capabilities()->split("\n") as $line) {
+          [$term, $plain] = array_pad(array_map('trim', explode('|', $line, 2)), 2, '');
+          if ($term !== '') {
+            $caps[] = ['term' => $term, 'plain' => $plain];
+          }
+        }
+        $hasPlain  = count(array_filter($caps, fn($c) => $c['plain'] !== '')) > 0;
+        $toggleId  = 'plain-' . $service->indexOf();
+        ?>
+        <?php if (count($caps) > 0): ?>
+        <?php if ($hasPlain): ?>
+        <input type="checkbox" id="<?= $toggleId ?>" class="plain-toggle">
+        <label for="<?= $toggleId ?>" class="plain-toggle-label">In plain English</label>
+        <?php endif ?>
         <ul class="ledger-capabilities">
-          <?php foreach ($service->capabilities()->split("\n") as $capability): ?>
-          <li><?= esc($capability) ?></li>
+          <?php foreach ($caps as $cap): ?>
+          <li>
+            <span class="cap-term"><?= esc($cap['term']) ?></span>
+            <?php if ($cap['plain'] !== ''): ?>
+            <span class="cap-plain"><?= esc($cap['plain']) ?></span>
+            <?php endif ?>
+          </li>
           <?php endforeach ?>
         </ul>
         <?php endif ?>
