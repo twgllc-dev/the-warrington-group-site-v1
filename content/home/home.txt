@@ -46,8 +46,8 @@ Services:
     Reporting, Dashboards & Self-Service BI | Easy-to-read, up-to-date reports your team can explore on their own, without waiting on an analyst.
 
 -
-  name: AI & Machine Learning Automation
-  description: Turn manual tasks into intelligent, autonomous systems. We pair custom machine learning and workflow automation to increase efficiency, accuracy, and performance across your operations.
+  name: Machine Learning Automation & AI Solutions
+  description: Turn manual tasks into intelligent, autonomous systems. We combine custom machine learning, workflow automation, and AI to boost efficiency, accuracy, and performance, and to elevate how your business operates.
   capabilities: |
     Predictive Analytics & Forecasting Models | Using your past data to anticipate what's coming, such as demand, sales, or customer behavior.
     Automated Data Quality & Pipeline Monitoring | Systems that watch your data around the clock and flag problems before they affect decisions.
