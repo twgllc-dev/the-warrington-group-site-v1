@@ -65,23 +65,23 @@ Services:
 
 ----
 
-Approach_heading: Outcome-Driven, Embedded Collaboration
+Approach_heading: Embedded by Design. Driven by Your Outcomes.
 
 ----
 
 Approach_steps:
 
 -
-  title: Discovery & Audit
-  description: We map your data landscape, identify immediate ROI opportunities, and define clear milestone deliverables before writing a line of code.
+  title: Learn Your Business
+  description: We learn your business inside and out: your goals, your data, and where the biggest wins are hiding. Then we agree on clear milestones before any building begins, so everyone knows what success looks like.
 
 -
-  title: Embedded Build & Automation
-  description: We join your team directly—building cloud architectures, engineering clean dbt models, and deploying automated workflows transparently alongside your staff.
+  title: Build Alongside You
+  description: We join your team as if we were part of it, building and automating side by side with your people. Your business's DNA becomes ours, and you see every step.
 
 -
-  title: Enablement & Autonomous Scale
-  description: We deliver fully documented, tested systems that your team can run independently, backed by optional continuous optimization retrainers as you scale.
+  title: Own It & Scale
+  description: We hand over fully documented, tested systems your team can run with confidence on its own. As you grow, we're here for ongoing improvements if you want us.
 
 ----
 
