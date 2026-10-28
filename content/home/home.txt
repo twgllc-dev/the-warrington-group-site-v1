@@ -10,7 +10,7 @@ Hero_subheadline: Full-Stack Analytics, Automation & AI Solutioning, Embedded in
 
 ----
 
-Hero_cta_primary_label: Start a Conversation
+Hero_cta_primary_label: Start A Conversation
 
 ----
 
@@ -73,7 +73,7 @@ Approach_steps:
 
 -
   title: Learn Your Business
-  description: We learn your business inside and out: your goals, your data, and where the biggest wins are hiding. Then we agree on clear milestones before any building begins, so everyone knows what success looks like.
+  description: We learn your business inside and out — your goals, your data, and where the biggest wins are hiding. Then we agree on clear milestones before any building begins, so everyone knows what success looks like.
 
 -
   title: Build Alongside You
