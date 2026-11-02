@@ -44,6 +44,7 @@ html {
   color: var(--color-text);
   background: var(--color-background);
   height: 100%;
+  scroll-padding-top: 5rem; /* anchor links (#services etc.) land below the sticky header */
 }
 img {
   width: 100%;
@@ -52,7 +53,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: none;
-  height: 100%;
+  min-height: 100%; /* NOT height: 100% — that caps <body> at one viewport and the sticky header scrolls away with it */
   display: flex;
   flex-direction: column;
 }
